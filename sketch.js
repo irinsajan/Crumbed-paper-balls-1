@@ -17,9 +17,9 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	trash = new trash(200,550,20);
+	trash = new Trash(200,550,20);
 
-	Engine.run(engine);
+	
   
 }
 
@@ -28,7 +28,7 @@ function draw() {
 	background(0);
 	Engine.update(engine);
 	trash.display();
-	rectMode(CENTER);
+
 	
   
  
